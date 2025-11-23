@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hangman</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="hangmanico.jpg" type="image/jpg">
+
+</head>
+
+<body>
+    <div id="modal">
+
+        <form action="">
+            <button id="close" type="button">закрыть</button>
+            <h4>режим игры</h4>
+            <button id="single" type="button">одиночная</button> <button id="multi" type="button">на двоих</button>
+        </form>
+
+    </div>
+    <div id="wordModal">
+
+        <form action="">
+
+            <h4>введите слово</h4>
+            <input id="secret" type="text">
+            <button id="use" type="button">применить</button>
+        </form>
+
+    </div>
+    <form id="game">
+        <h3 id="gameTitle">виселица</h3>
+        <img id="img" src="hangman0.png" alt="">
+        <div>
+            <h5 id="secretwordLength">длина слова:</h5>
+        </div>
+        <p id="shifr">????????????????????</p>
+        <input id="input" type="text" placeholder="?" maxlength="1">
+        <button id="Check">проверить букву</button>
+        <button id="newGame" type="button">новая игра</button>
+        <button id="settings" type="button">настройки</button>
+        <div>
+            <p id="usedLetters">использованные буквы:</p>
+        </div>
+
+    </form>
+
+    <div id="konfetti">
+        <img id="leftK" src="konfetipobeda.gif" alt="">
+        <img id="rightK" src="konfetipobeda.gif" alt="">
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>

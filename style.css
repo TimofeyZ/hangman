@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("bg.jpg");
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+form {
+
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.712);
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 100px;
+    border: 5px solid rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#game img {
+    border-radius: 666px;
+    background-color: rgba(255, 255, 255, 0.534);
+    width: 60%;
+    box-shadow: inset 0 0 30px rgb(221, 143, 25);
+    display: block;
+    margin: 20px auto;
+}
+
+input {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    border-radius: 5px;
+    border: 3px solid rgb(245, 137, 35);
+
+}
+
+button {
+    font-family: "Amatic SC", sans-serif;
+    color: rgb(53, 49, 49);
+    height: 40px;
+    background-color: rgba(245, 137, 35, 0.479);
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 30px;
+    line-height: 27px;
+    margin: 3px;
+    border: none;
+    padding: 5px 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: rgb(245, 137, 35);
+    color: white;
+
+}
+
+p {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px auto;
+}
+
+h1 {
+    opacity: 0;
+
+}
+
+#leftK,
+#rightK {
+    width: 600px;
+    position: fixed;
+    bottom: 0;
+}
+
+#rightK {
+    right: 0;
+    transform: scaleX(-1);
+}
+
+#k {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+html {
+    transition: 2s;
+}
+
+#konfetti {
+    opacity: 0;
+}
+
+h5 {
+    font-family: "Amatic SC", sans-serif;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px auto;
+}
+
+#modal {
+    background-color: rgba(240, 255, 255, 0.247);
+    backdrop-filter: blur(20px);
+    position: fixed;
+opacity: 0;
+transition: 0.6s;
+pointer-events: none;
+    height: 100%;
+    width: 100%;
+    z-index: 43127412154;
+}
+#modal h4 {
+    font-size: 66px;
+    font-family: "Amatic SC", sans-serif;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px auto;
+}
+#wordModal {
+    background-color: rgba(240, 255, 255, 0.247);
+    backdrop-filter: blur(20px);
+    position: fixed;
+opacity: 0;
+transition: 0.6s;
+pointer-events: none;
+    height: 100%;
+    width: 100%;
+    z-index: 43127412154;
+}
+#wordModal h4 {
+    font-size: 66px;
+    font-family: "Amatic SC", sans-serif;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px auto;
+}
+#wordModal input{
+    width: 350px;
+    font-size: 30px;
+}
